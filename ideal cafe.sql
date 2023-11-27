@@ -64,7 +64,7 @@ insert into menu_category (name,menu_id) values ('Appetizers',1),
 										('Bourbon',2),
 										('Breakfast',3),
 										('Desserts',4);
-					drop table category_foods;				
+                                        
 create table category_foods(
 id tinyint auto_increment primary key,
 name varchar(100) not null,
@@ -271,7 +271,10 @@ insert into category_foods (name,about,price,weight,menu_category_id) values
 ('Kruassan',null,4.00,null,31),
 ('Tiramisu',null,8.80,null,31);
 
-
+select *from category_foods;
+select *from menu;
+select *from menu_category;
+select *from restaurants;
 
 
 
